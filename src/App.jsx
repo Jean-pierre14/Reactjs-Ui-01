@@ -1,9 +1,22 @@
 import React from "react";
-const App = () =>{
+import { Typography, AppBar, Card, CardActions, CardContent, CardMedia, CssBaseline, Grid, Toolbar, Container } from '@material-ui/core';
+import { PhotoCamera } from "@material-ui/icons";
+
+
+const App = () => {
     return(
-        <div>
-            <h2>Hello</h2>
-        </div>
+        <>
+
+            <CssBaseline/>
+            <AppBar>
+                <Toolbar>
+                    <PhotoCamera/>
+                    <Typography variant="h6">
+                        Racine Studio
+                    </Typography>
+                </Toolbar>
+            </AppBar>
+        </>
     )
 }
 export default App
