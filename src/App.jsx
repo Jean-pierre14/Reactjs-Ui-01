@@ -16,6 +16,14 @@ const App = () => {
                     </Typography>
                 </Toolbar>
             </AppBar>
+            <main>
+                <Container>
+                    <Typography variant="h1" align="center" gutterBottom>Welcome to Racine14</Typography>
+                </Container>
+            </main>
+            <Container fixed>
+                <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }} />
+            </Container>
         </>
     )
 }
