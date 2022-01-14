@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
-    "chartjs": "^0.3.24"
+    "chartjs": "^0.3.24",
+    "react-router-dom": "^6.2.1"
   }
 }
