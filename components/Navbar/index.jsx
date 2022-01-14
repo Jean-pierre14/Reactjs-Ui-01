@@ -1,4 +1,4 @@
-import { React } from "react";
+import { React, Component } from "react";
 
 function Navbar() {
   return <h3>Hello Navbar</h3>;
