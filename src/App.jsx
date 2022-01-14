@@ -1,7 +1,7 @@
 import { React } from "react";
 import Navbar from "../components/Navbar/index";
 
-export default function App() {
+function App() {
   return (
     <>
       <h3>Hello</h3>
@@ -9,3 +9,5 @@ export default function App() {
     </>
   );
 }
+
+export default App;
