@@ -4,7 +4,7 @@ import Navbar from "./Components/Navbar";
 import Data from "./Data";
 import AppBar from "./Components/AppBar";
 // import { render } from "@testing-library/react";
-import Form from "./Components/Form";
+import Form from "./Components/Form/Multiple";
 
 export default function App() {
   const keyClick = () => {
