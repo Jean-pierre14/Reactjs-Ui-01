@@ -15,11 +15,18 @@ export default function Multiple() {
 
   const FormStyle = {
     position: "relative",
-    width: "80%",
+    width: "50%",
     margin: "10px auto",
     padding: "10px",
     border: "1px solid #ccc",
     "border-radius": ".4rem",
+  };
+  const Inputs = {
+    width: "100%",
+    padding: "10px",
+    border: "1px solid #ccc",
+    "border-radius": ".4rem",
+    outline: "none",
   };
   return (
     <>
@@ -41,6 +48,7 @@ export default function Multiple() {
           <div>
             <label for="name">Second Name</label>
             <input
+              style={Inputs}
               className="input"
               name="sname"
               placeholder="Second Name..."
