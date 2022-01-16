@@ -9,9 +9,9 @@ import "./assets/css/style.css";
 
 class App extends Component {
   render() {
-    const keyClick = () => {
-      alert("clicked");
-    };
+    // const keyClick = () => {
+    //   alert("clicked");
+    // };
 
     const Container = {
       position: "relative",
@@ -28,17 +28,12 @@ class App extends Component {
           <div className="SideBar">
             {/* <h2>Sidebar</h2> */}
             <Form />
-            <Data />
-            <Navbar />
-            <form>
+            {/* <form>
               <input autoComplete="off" type="text" onKeyUp={keyClick} />
-            </form>
+            </form> */}
           </div>
           <div className="MainContainer">
-            {/* <h2>Main</h2> */}
-            <div style={Container} className="MarginY">
-              <h3>Hello</h3>
-            </div>
+            <h3>Data</h3>
           </div>
         </div>
       </>

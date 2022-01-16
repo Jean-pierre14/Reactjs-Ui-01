@@ -35,6 +35,7 @@ export default function Multiple() {
   };
   const BtnSubmit = {
     width: "100%",
+    borderRadius: ".4rem",
     padding: "15px 20px",
   };
   return (
@@ -81,7 +82,7 @@ export default function Multiple() {
             />
           </div>
           <div style={MarginY}>
-            <input type="submit" style={BtnSubmit} />
+            <input className="Button" type="submit" style={BtnSubmit} />
           </div>
         </form>
       </div>
