@@ -39,6 +39,7 @@ export default function Multiple() {
           <div>
             <label for="name">Name</label>
             <input
+              autoComplete="off"
               style={Inputs}
               className="input"
               name="name"
@@ -50,6 +51,7 @@ export default function Multiple() {
           <div>
             <label for="name">Second Name</label>
             <input
+              autoComplete="off"
               style={Inputs}
               className="input"
               name="sname"

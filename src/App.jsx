@@ -5,6 +5,7 @@ import Data from "./Data";
 import AppBar from "./Components/AppBar";
 // import { render } from "@testing-library/react";
 import Form from "./Components/Form/Multiple";
+import "./assets/css/style.css";
 
 class App extends Component {
   render() {
@@ -27,7 +28,7 @@ class App extends Component {
           <h3>Hello</h3>
           <Form />
           <form>
-            <input type="text" onKeyUp={keyClick} />
+            <input autoComplete="off" type="text" onKeyUp={keyClick} />
           </form>
           <div id="result"></div>
           <Data />
