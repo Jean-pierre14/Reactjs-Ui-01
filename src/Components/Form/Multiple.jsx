@@ -60,6 +60,21 @@ export default function Multiple() {
               onChange={EventChange}
             />
           </div>
+          <div>
+            <label for="name">Second Name</label>
+            <input
+              autoComplete="off"
+              style={Inputs}
+              className="input"
+              name="email"
+              placeholder="Email"
+              value={inputs.email}
+              onChange={EventChange}
+            />
+          </div>
+          <div>
+            <input type="submit" className="BtnSubmit" />
+          </div>
         </form>
       </div>
     </>
