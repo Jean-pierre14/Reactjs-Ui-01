@@ -22,6 +22,7 @@ export default function Multiple() {
     "border-radius": ".4rem",
   };
   const Inputs = {
+    position: "relative",
     width: "100%",
     padding: "10px",
     border: "1px solid #ccc",
@@ -38,6 +39,7 @@ export default function Multiple() {
           <div>
             <label for="name">Name</label>
             <input
+              style={Inputs}
               className="input"
               name="name"
               placeholder="Name..."

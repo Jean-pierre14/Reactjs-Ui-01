@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 // import Car from "../components/Car";
 import Navbar from "./Components/Navbar";
 import Data from "./Data";
@@ -11,17 +11,28 @@ class App extends Component {
     const keyClick = () => {
       alert("clicked");
     };
+
+    const Container = {
+      position: "relative",
+      width: "80%",
+      padding: "10px",
+      margin: "auto",
+      borderRadius: ".4rem",
+      border: "1px solid #ccc",
+    };
     return (
       <>
-        <AppBar />
-        <h3>Hello</h3>
-        <Form />
-        <form>
-          <input type="text" onKeyUp={keyClick} />
-        </form>
-        <div id="result"></div>
-        <Data />
-        <Navbar />
+        <div style={Container}>
+          <AppBar />
+          <h3>Hello</h3>
+          <Form />
+          <form>
+            <input type="text" onKeyUp={keyClick} />
+          </form>
+          <div id="result"></div>
+          <Data />
+          <Navbar />
+        </div>
       </>
     );
   }
