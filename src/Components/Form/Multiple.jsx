@@ -29,6 +29,14 @@ export default function Multiple() {
     "border-radius": ".4rem",
     outline: "none",
   };
+  const MarginY = {
+    position: "relative",
+    margin: "10px 0",
+  };
+  const BtnSubmit = {
+    width: "100%",
+    padding: "15px 20px",
+  };
   return (
     <>
       <div style={FormStyle}>
@@ -72,8 +80,8 @@ export default function Multiple() {
               onChange={EventChange}
             />
           </div>
-          <div>
-            <input type="submit" className="BtnSubmit" />
+          <div style={MarginY}>
+            <input type="submit" style={BtnSubmit} />
           </div>
         </form>
       </div>

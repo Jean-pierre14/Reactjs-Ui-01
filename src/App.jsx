@@ -26,7 +26,7 @@ class App extends Component {
         <AppBar />
         <div className="main">
           <div className="SideBar">
-            <h2>Sidebar</h2>
+            {/* <h2>Sidebar</h2> */}
             <Form />
             <Data />
             <Navbar />
@@ -35,8 +35,8 @@ class App extends Component {
             </form>
           </div>
           <div className="MainContainer">
-            <h2>Main</h2>
-            <div style={Container}>
+            {/* <h2>Main</h2> */}
+            <div style={Container} className="MarginY">
               <h3>Hello</h3>
             </div>
           </div>

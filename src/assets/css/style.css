@@ -66,6 +66,11 @@ body {
   grid-template-columns: 1fr 4fr;
 }
 
+.MarginY {
+  position: relative;
+  margin: 10px 0;
+}
+
 @media (max-width: 700px) {
   /* .Navbar {
     display: block;
