@@ -23,8 +23,8 @@ class App extends Component {
     };
     return (
       <>
+        <AppBar />
         <div style={Container}>
-          <AppBar />
           <h3>Hello</h3>
           <Form />
           <form>
