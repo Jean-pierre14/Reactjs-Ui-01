@@ -24,15 +24,22 @@ class App extends Component {
     return (
       <>
         <AppBar />
-        <div style={Container}>
-          <h3>Hello</h3>
-          <Form />
-          <form>
-            <input autoComplete="off" type="text" onKeyUp={keyClick} />
-          </form>
-          <div id="result"></div>
-          <Data />
-          <Navbar />
+        <div className="main">
+          <div className="SideBar">
+            <h2>Sidebar</h2>
+            <Form />
+            <Data />
+            <Navbar />
+            <form>
+              <input autoComplete="off" type="text" onKeyUp={keyClick} />
+            </form>
+          </div>
+          <div className="MainContainer">
+            <h2>Main</h2>
+            <div style={Container}>
+              <h3>Hello</h3>
+            </div>
+          </div>
         </div>
       </>
     );

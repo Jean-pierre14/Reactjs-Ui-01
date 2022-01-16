@@ -15,7 +15,7 @@ export default function Multiple() {
 
   const FormStyle = {
     position: "relative",
-    width: "50%",
+    width: "90%",
     margin: "10px auto",
     padding: "10px",
     border: "1px solid #ccc",

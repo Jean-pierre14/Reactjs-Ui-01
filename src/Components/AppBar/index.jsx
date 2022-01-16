@@ -6,13 +6,17 @@ export default function AppBar() {
           <div className="Wrapper">Racine14</div>
         </div>
         <div className="Center">
-          <div className="Wrapper">Center</div>
+          <div className="Wrapper">
+            <input type="text" placeholder="Typing..." className="Inputs" />
+          </div>
         </div>
         <div className="Right">
           <div className="Right">
             <ul className="menu">
               <li>
-                <a href="#">Home</a>
+                <a href="#" className="active">
+                  Home
+                </a>
               </li>
               <li>
                 <a href="#">Profil</a>

@@ -45,8 +45,33 @@ body {
 
   transition: all ease 0.3s;
 }
+.active,
 .menu li a:hover {
   position: relative;
   background-color: #ccc;
-  color: #000;
+  color: #000 !important;
+}
+.Inputs {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  outline: none !important;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+}
+.main {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+@media (max-width: 700px) {
+  /* .Navbar {
+    display: block;
+  } */
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
