@@ -10,7 +10,7 @@ export default function Multiple() {
   const Myform = (event) => {
     event.preventDefault();
 
-    alert(inputs);
+    alert(inputs.name);
   };
 
   const FormStyle = {
