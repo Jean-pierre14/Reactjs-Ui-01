@@ -9,10 +9,6 @@ import "./assets/css/style.css";
 
 class App extends Component {
   render() {
-    // const keyClick = () => {
-    //   alert("clicked");
-    // };
-
     const Container = {
       position: "relative",
       width: "80%",
@@ -21,6 +17,7 @@ class App extends Component {
       borderRadius: ".4rem",
       border: "1px solid #ccc",
     };
+
     return (
       <>
         <AppBar />
