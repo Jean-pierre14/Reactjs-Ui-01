@@ -2,6 +2,7 @@ import React, { Component } from "react";
 // import Car from "../components/Car";
 import Navbar from "./Components/Navbar";
 import Data from "./Data";
+import MainContainer from "./Components/Container/Main";
 import AppBar from "./Components/AppBar";
 // import { render } from "@testing-library/react";
 import Form from "./Components/Form/Multiple";
@@ -30,7 +31,7 @@ class App extends Component {
             </form> */}
           </div>
           <div className="MainContainer">
-            <h3>Data</h3>
+            <MainContainer />
           </div>
         </div>
       </>
