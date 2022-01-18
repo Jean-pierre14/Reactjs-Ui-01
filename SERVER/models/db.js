@@ -1,9 +1,15 @@
 const mysql = require("mysql");
-const con = mysql.createConnection({
+const { success, error } = require("consola");
+
+const db = mysql.createConnection({
   host: "localhost",
-  database: "payment",
   user: "root",
   password: "",
+  database: "payment",
+});
+db.connect((err) => {
+  if (err) error({ message: `Error: ${err}`, badge: true });
+  success({ message: `Vous etez connecte a la base des donnees`, badge: true });
 });
 
-module.exports = con;
+module.exports = db;

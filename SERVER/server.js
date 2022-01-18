@@ -3,18 +3,20 @@ const exp = require("express"),
   { success, error } = require("consola"),
   app = exp(),
   dotenv = require("dotenv"),
-  con = require("./models/db"),
   PORT = process.env.PORT || 7000;
 
 dotenv.config();
 
 app.use(cors());
+const db = require("./models/db");
 
-const db = con.connect(con, (err) => {
-  if (err) throw err;
-  success({ message: `Database CONNECTED`, badge: true });
+app.get("/", (req, res) => {
+  let sql = "SELECT * FROM student ORDER BY username ASC";
+  db.query(sql, async (err, results) => {
+    if (err) throw err;
+    await res.json(results);
+  });
 });
-module.exports = db;
 
 app.listen(PORT, (e) => {
   if (e) error({ message: `Error: ${e}`, badge: true });
