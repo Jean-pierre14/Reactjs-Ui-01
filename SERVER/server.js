@@ -18,6 +18,16 @@ app.get("/", (req, res) => {
   });
 });
 
+app.post("/", (req, res) => {
+  const { username, sname, email } = req.body;
+
+  let SQL = "INSERT INTO student(username, sname, email) VALUES(?, ?, ?)";
+  db.query(SQL, [username, sname, email], (err, result) => {
+    if (err) throw err;
+    console.log(result);
+  });
+});
+
 app.listen(PORT, (e) => {
   if (e) error({ message: `Error: ${e}`, badge: true });
   success({ message: `Server run on port ${PORT}`, badge: true });
