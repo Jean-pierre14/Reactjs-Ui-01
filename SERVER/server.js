@@ -1,5 +1,6 @@
 const exp = require("express"),
   cors = require("cors"),
+  bodyParser = require("body-parser"),
   { success, error } = require("consola"),
   app = exp(),
   dotenv = require("dotenv"),
@@ -8,6 +9,7 @@ const exp = require("express"),
 dotenv.config();
 
 app.use(cors());
+app.use(bodyParser.json());
 const db = require("./models/db");
 
 app.get("/", (req, res) => {
@@ -21,10 +23,10 @@ app.get("/", (req, res) => {
 app.post("/", (req, res) => {
   const { username, sname, email } = req.body;
 
-  let SQL = "INSERT INTO student(username, sname, email) VALUES(?, ?, ?)";
-  db.query(SQL, [username, sname, email], (err, result) => {
+  let SQL = `INSERT INTO student(username, sname, email) VALUES("${username}", "${sname}", "${email}")`;
+  db.query(SQL, (err, result) => {
     if (err) throw err;
-    console.log(result);
+    res.json(result);
   });
 });
 
