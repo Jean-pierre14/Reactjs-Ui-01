@@ -8,6 +8,7 @@ import AppBar from "./Components/AppBar";
 import Form from "./Components/Form/Multiple";
 import "./assets/css/style.css";
 import axios from "axios";
+import PostApi from "./Components/Form/postApi";
 
 const api = axios.create({
   baseURL: `http://127.0.0.1:7000/`,
@@ -53,6 +54,9 @@ class App extends Component {
           </div>
           <div className="MainContainer">
             <MainContainer />
+            <div className="Container">
+              <PostApi />
+            </div>
           </div>
         </div>
       </>

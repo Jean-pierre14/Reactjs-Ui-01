@@ -1,22 +1,27 @@
 import React, { Component } from "react";
 
 export default class PostApi extends Component {
-  state = {
-    username: '', sname: '', email: ''
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      username: "",
+      sname: "",
+      email: "",
+    };
+  }
+  ChangeHandler(e) {
+    this.setState({ [e.target.name]: e.target.value });
+  }
+  SubmitHandler(e) {
+    e.preventDefault();
+    console.log(this.state);
+  }
 
-  constructor() {
-    super();
-    this.setState({inputs: })
-  }
-  ChangeHandler(e){
-      this.setState({[e.target.name]: e.target.value})
-  }
   render() {
-      const {username, sname, email} = this.state
+    const { username, sname, email } = this.state;
     return (
       <>
-        <form autoComplete="off">
+        <form autoComplete="off" onSubmit={this.SubmitHandler}>
           <div>
             <label for="username">Username</label>
             <input
@@ -24,7 +29,7 @@ export default class PostApi extends Component {
               id="username"
               name="username"
               value={username}
-              onChange={ChangeHandler}
+              onChange={this.ChangeHandler}
               className="Inputs"
             />
           </div>
@@ -35,7 +40,7 @@ export default class PostApi extends Component {
               id="sname"
               name="sname"
               value={sname}
-              onChange={ChangeHandler}
+              onChange={this.ChangeHandler}
               className="Inputs"
             />
           </div>
@@ -46,12 +51,14 @@ export default class PostApi extends Component {
               id="email"
               name="email"
               value={email}
-              onChange={ChangeHandler}
+              onChange={this.ChangeHandler}
               className="Inputs"
             />
           </div>
           <div>
-              <button type="submit">Record</button>
+            <button type="submit" className="Button">
+              Record
+            </button>
           </div>
         </form>
       </>

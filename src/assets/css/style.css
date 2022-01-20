@@ -60,6 +60,12 @@ body {
   border: 1px solid #ccc;
   border-radius: 0.4rem;
 }
+.Container {
+  position: relative;
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
 .main {
   position: relative;
   display: grid;
@@ -68,6 +74,8 @@ body {
 .Button {
   position: relative;
   display: flex;
+  padding: 10px 20px;
+  margin: 10px 0;
   align-items: center;
   align-content: center;
   cursor: pointer;
