@@ -41,10 +41,11 @@ class App extends Component {
           <div className="SideBar">
             {/* <h2>Sidebar</h2> */}
             <Form />
-
-            {this.state.users.map((user) => (
-              <li key={user.id_student}>{user.email}</li>
-            ))}
+            <ul>
+              {this.state.users.map((user) => (
+                <li key={user.id_student}>{user.email}</li>
+              ))}
+            </ul>
 
             {/* <form>
               <input autoComplete="off" type="text" onKeyUp={keyClick} />

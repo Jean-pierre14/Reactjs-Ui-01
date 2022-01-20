@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 export default function Multiple() {
   const [inputs, setInputs] = useState({});
 
